@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Button = ({ text, onClick, className }) => {
+const Btn = ({ text, onClick, className }) => {
     return (
       <button
         onClick={onClick}
@@ -10,4 +10,4 @@ const Button = ({ text, onClick, className }) => {
       </button>
     );
   };
-  export default Button;
+  export default Btn;

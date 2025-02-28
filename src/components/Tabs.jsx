@@ -1,15 +1,13 @@
-import Btn from "./components/Btn";
-import { useState } from "react";
-import Text from "./components/Text";
-// import Forum from "./components/Forum";
-import Supra from "./assets/supra.jpg"
-import Lambo from "./assets/lambo.jpg"
-import Kosieng from "./assets/koseing.jpg"
-import Mazda from "./assets/mazda.jpg"
-import Forummaaz from "./components/Forummaaz";
+import React from 'react'
+import { useState } from 'react';
+import Btn from '../components/Btn';
+import Text from "../components/Text";
+import Supra from "../assets/";
+import Lambo from "./assets/lambo.jpg";
+import Kosieng from "./assets/koseing.jpg";
+import Mazda from "./assets/mazda.jpg";
 
-
-const App = () => {
+const Tabs = () => {
   const [a, setA] = useState(false);
   const [b, setB] = useState(false);
   const [c, setC] = useState(false);
@@ -39,6 +37,8 @@ const App = () => {
     setD(true);
   }
   return (
+
+
     <>
       <div className="flex items-center justify-center w-full mt-10 gap-4">
         <Btn
@@ -65,7 +65,7 @@ const App = () => {
       {a ? (
         <Text
           heading="Supra"
-          img = {Supra}
+          img={Supra}
           para="The Toyota Supra MK4, produced from 1993 to 1998, is widely considered a legendary sports car renowned for its powerful twin-turbocharged 2JZ-GTE engine, exceptional handling, and timeless design; it gained immense popularity thanks to its appearance in the Fast and Furious movie franchise, further boosting its status as a highly sought-after car for tuning and modification, with enthusiasts appreciating its reliability and potential for significant horsepower upgrades, solidifying its place as a classic among car collectors and performance enthusiasts alike. "
         />
       ) : null}
@@ -93,11 +93,8 @@ const App = () => {
           img={Mazda}
         />
       ) : null}
-      <div>
-        <Forummaaz/>
-      </div>
-    </>
-  );
-};
+</>
+)
+}
 
-export default App;
+export default Tabs
